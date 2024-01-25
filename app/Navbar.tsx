@@ -8,11 +8,12 @@ const Navbar = () => {
     
     const currentPath = usePathname();
     console.log(currentPath);
+
     const Links = [
         {label: 'Dashboard', href : "/dashboard"},
         {label: 'Issues', href: "/issues"}
     ]
-
+    //need to fix the database//
     return (
     <nav className='flex space-x-6 border-b mb-5 px-5 h-14 items-center'>
         <Link href="/"><AiFillBug/></Link>
